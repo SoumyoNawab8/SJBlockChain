@@ -16,6 +16,7 @@ class BlockchainController {
         this.submitStar();
         this.getBlockByHash();
         this.getStarsByOwner();
+        this.validateChain();
     }
 
     // Enpoint to Get a Block by Height (GET Endpoint)
@@ -115,6 +116,24 @@ class BlockchainController {
             }
             
         });
+    }
+
+    //Thid endpoint allows you to request the validation errors if any in the chain.
+    validateChain() {  
+        this.app.get("/validate", async (req, res) => {
+            try { 
+                let validationErrors = await this.blockchain.validateChain();
+                if(validationErrors){
+                    return res.status(200).send(validationErrors);
+                }
+                else{
+                    return res.status(500).send("An error happened!");
+                }
+             }
+            catch (error) {
+                return res.status(500).send(error);
+             }
+        })
     }
 
 }

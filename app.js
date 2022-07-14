@@ -9,6 +9,8 @@
 const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
+const dotenv = require('dotenv');
+dotenv.config();
 /**
  * Require the Blockchain class. This allow us to have only one instance of the class.
  */
@@ -32,7 +34,7 @@ class ApplicationServer {
 	}
 
 	initExpress() {
-		this.app.set("port", 8000);
+		this.app.set("port", process.env.PORT);
 	}
 
 	initExpressMiddleWare() {

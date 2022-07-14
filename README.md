@@ -19,3 +19,5 @@ You should see in your terminal a message indicating that the server is listenin
      ![Request: http://localhost:8000/submitstar](Screenshots/Test%20Case%204.png)
 6. Retrieve Stars owned by me
     ![Request: http://localhost:8000/blocks/<WALLET_ADDRESS>](Screenshots/Test%20Case%205.png)
+7. Validate theexisting chain
+    ![Request: http://localhost:8000/validate](Screenshots/Test%20Case%206(validateChain).png)
