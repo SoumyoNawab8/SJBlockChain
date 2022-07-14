@@ -130,7 +130,7 @@ class Blockchain {
             else{ // timeout exception
                 reject(new Error(`Elapsed time should be less than 5minutes`));
             }
-        });
+        }).catch(err => console.log(err));
     }
 
     /**
@@ -183,7 +183,7 @@ class Blockchain {
                     if(data.walletAddress === address){
                         stars.push(data);
                     }
-                }).catch((err) => {reject(err);});
+                })
                 resolve(stars);
             })
         });

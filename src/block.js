@@ -72,7 +72,7 @@ class Block {
     
     return new Promise((resolve) => {
         if (self.height == 0) {
-            reject("genesis block data");
+            resolve("genesis block data");
         }
       // Getting the encoded data saved in the Block
       let encodedBlockData = self.body;
