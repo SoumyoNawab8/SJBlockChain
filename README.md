@@ -10,12 +10,12 @@ You should see in your terminal a message indicating that the server is listenin
 ## Tested Screenshots
 
 2. To make sure your application is working fine and it creates the Genesis Block you can use POSTMAN to request the Genesis block:
-    ![Request: http://localhost:8000/block/0 ](screenshots/Test%20case%201.png)
+    ![Request: http://localhost:8000/block/0 ](Screenshots/Test%20case%201.png)
 3. Make your first request of ownership sending your wallet address:
-    ![Request: http://localhost:8000/requestValidation ](screenshots/Test%20Case%202.png)
+    ![Request: http://localhost:8000/requestValidation ](Screenshots/Test%20Case%202.png)
 4. Sign the message with your Wallet:
-    ![Use the Wallet to sign a message](screenshots/Test%20Case%203.png)
+    ![Use the Wallet to sign a message](Screenshots/Test%20Case%203.png)
 5. Submit your Star
-     ![Request: http://localhost:8000/submitstar](screenshots/Test%20Case%204.png)
+     ![Request: http://localhost:8000/submitstar](Screenshots/Test%20Case%204.png)
 6. Retrieve Stars owned by me
-    ![Request: http://localhost:8000/blocks/<WALLET_ADDRESS>](screenshots/Test%20Case%205.png)
+    ![Request: http://localhost:8000/blocks/<WALLET_ADDRESS>](Screenshots/Test%20Case%205.png)
